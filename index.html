@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALL Lawn Care Service | Lawn &amp; Landscaping Fort Wayne IN | (260) 494-5700</title>
+  <meta name="description" content="Fort Wayne's trusted lawn care &amp; landscaping company. Family-owned, 15+ years, 200+ Google reviews at 4.6 stars. Mowing, landscaping, mulch, tree trimming, snow removal &amp; more. Free estimates. Call (260) 494-5700.">
+  <meta name="keywords" content="lawn care Fort Wayne, landscaping Fort Wayne Indiana, lawn mowing Fort Wayne IN, snow removal Fort Wayne, mulch installation Fort Wayne, tree trimming Fort Wayne, commercial lawn care Fort Wayne">
+  <meta name="author" content="ALL Lawn Care Service &amp; Landscaping LLC">
+  <link rel="canonical" href="https://fwlawns.com/">
+  <meta property="og:title" content="ALL Lawn Care Service — Fort Wayne's Trusted Lawn &amp; Landscape Crew">
+  <meta property="og:description" content="Family-owned. 15+ years. 4.6 stars. Serving Fort Wayne and Northeast Indiana. Free estimates. Call (260) 494-5700.">
+  <meta property="og:url" content="https://fwlawns.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://fwlawns.com/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* === VARIABLES & RESET === */
+    :root {
+      --color-primary: #1B4332;
+      --color-primary-dark: #0D2B1F;
+      --color-primary-light: #2D6A4F;
+      --color-accent: #95C11F;
+      --color-accent-dark: #6E8E16;
+      --color-warm: #F5F0E8;
+      --color-dark: #111A13;
+      --color-gray: #6B7280;
+      --color-white: #FFFFFF;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --radius: 12px;
+      --transition: 200ms ease;
+      --container-max: 1200px;
+      --container-pad: clamp(1rem, 5vw, 2.5rem);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); color: var(--color-dark); background: var(--color-white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { cursor: pointer; font-family: var(--font-body); }
+
+    .container { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-pad); }
+
+    /* === BUTTONS === */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: .5rem; padding: .75rem 1.75rem; font-family: var(--font-body);
+      font-weight: 600; font-size: 1rem; border-radius: var(--radius);
+      border: 2px solid transparent; transition: background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
+      white-space: nowrap; min-height: 48px;
+    }
+    .btn-accent { background: var(--color-accent); color: var(--color-dark); }
+    .btn-accent:hover { background: var(--color-accent-dark); }
+    .btn-primary { background: var(--color-primary); color: var(--color-white); }
+    .btn-primary:hover { background: var(--color-primary-light); }
+    .btn-outline-white { background: transparent; color: var(--color-white); border-color: var(--color-white); }
+    .btn-outline-white:hover { background: rgba(255,255,255,.15); }
+    .btn-pill { border-radius: 100px; }
+    .btn-large { padding: .9rem 2.25rem; font-size: 1.05rem; min-height: 52px; }
+
+    /* === FADE-UP ANIMATION === */
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .55s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* === SECTION SHARED === */
+    .section-header { text-align: center; margin-bottom: 3rem; }
+    .section-heading { font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.75rem); color: var(--color-dark); line-height: 1.2; margin-bottom: .75rem; }
+    .section-subheading { font-size: 1.1rem; color: var(--color-gray); max-width: 560px; margin: 0 auto; }
+
+    /* === NAV === */
+    .site-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      transition: background var(--transition), box-shadow var(--transition);
+    }
+    .site-nav.scrolled { background: var(--color-primary-dark); box-shadow: 0 2px 20px rgba(0,0,0,.35); }
+    .nav-inner {
+      max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-pad);
+      height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+    }
+    .nav-logo { display: flex; align-items: center; gap: .65rem; color: var(--color-white); flex-shrink: 0; }
+    .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+    .nav-logo-main { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; }
+    .nav-logo-sub { font-family: var(--font-body); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-link { color: rgba(255,255,255,.88); font-size: .95rem; font-weight: 500; position: relative; padding-bottom: 2px; transition: color var(--transition); }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width var(--transition); }
+    .nav-link:hover, .nav-link.active { color: var(--color-white); }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .nav-actions { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+    .nav-phone { display: flex; align-items: center; gap: .4rem; color: rgba(255,255,255,.9); font-size: .9rem; font-weight: 500; transition: color var(--transition); }
+    .nav-phone:hover { color: var(--color-accent); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; padding: 4px; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--color-white); border-radius: 2px; transition: transform var(--transition), opacity var(--transition); }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* === MOBILE NAV OVERLAY === */
+    .mobile-nav-overlay {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: var(--color-primary-dark); flex-direction: column;
+      padding: 5rem 2rem 2rem; transform: translateX(100%); transition: transform .3s ease;
+    }
+    .mobile-nav-overlay.open { transform: translateX(0); display: flex; }
+    .mobile-nav-close { position: absolute; top: 1.25rem; right: 1.5rem; background: none; border: none; color: var(--color-white); font-size: 2rem; line-height: 1; }
+    .mobile-nav-links { display: flex; flex-direction: column; gap: 1.5rem; flex: 1; }
+    .mobile-nav-link { color: var(--color-white); font-size: 1.5rem; font-family: var(--font-display); font-weight: 600; transition: color var(--transition); }
+    .mobile-nav-link:hover { color: var(--color-accent); }
+    .mobile-nav-footer { display: flex; flex-direction: column; gap: 1rem; border-top: 1px solid rgba(255,255,255,.15); padding-top: 1.5rem; }
+    .mobile-nav-phone { color: var(--color-accent); font-size: 1.4rem; font-weight: 600; text-align: center; }
+    .mobile-nav-cta { width: 100%; text-align: center; }
+
+    /* === HERO === */
+    .hero {
+      position: relative; min-height: 100vh; display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover; background-position: center top;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(120deg, rgba(13,43,31,.82) 0%, rgba(13,43,31,.55) 50%, rgba(13,43,31,.18) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2; padding: 7rem var(--container-pad) 5rem;
+      max-width: calc(var(--container-max) / 2 + var(--container-pad));
+      width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(149,193,31,.2); border: 1px solid rgba(149,193,31,.5);
+      color: var(--color-accent); font-size: .85rem; font-weight: 600;
+      padding: .4rem 1rem; border-radius: 100px; margin-bottom: 1.5rem;
+    }
+    .hero-headline {
+      font-family: var(--font-display); font-size: clamp(2.6rem, 6vw, 4.5rem);
+      color: var(--color-white); line-height: 1.1; margin-bottom: 1.25rem; font-weight: 700;
+    }
+    .hero-subheadline { font-size: clamp(1rem, 2vw, 1.25rem); color: rgba(255,255,255,.85); max-width: 520px; margin-bottom: 1.5rem; font-weight: 300; }
+    .hero-stars { display: flex; align-items: center; gap: .6rem; margin-bottom: 2rem; }
+    .stars { color: #FFD700; letter-spacing: 2px; font-size: 1.1rem; }
+    .hero-stars-text { color: rgba(255,255,255,.85); font-size: .9rem; font-weight: 500; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .hero-scroll-indicator {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      animation: bounce 2s infinite; opacity: .7;
+    }
+    @keyframes bounce { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(8px); } }
+
+    /* === TRUST BAR === */
+    .trust-bar { background: var(--color-primary); padding: 2.5rem 0; }
+    .trust-bar-inner {
+      max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-pad);
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; align-items: center;
+    }
+    .trust-divider { width: 1px; background: rgba(255,255,255,.2); height: 60px; justify-self: center; }
+    .trust-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .35rem; padding: .5rem 1rem; }
+    .trust-icon { margin-bottom: .2rem; }
+    .trust-stat { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--color-white); line-height: 1; display: inline; }
+    .trust-stat-suffix { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--color-white); line-height: 1; display: inline; }
+    .trust-stat-text { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--color-white); line-height: 1.2; }
+    .trust-label { font-size: .8rem; color: rgba(255,255,255,.7); font-weight: 500; letter-spacing: .03em; }
+
+    /* === SERVICES === */
+    .services { padding: 5rem 0; background: var(--color-warm); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;
+    }
+    .service-card {
+      background: var(--color-white); border: 1px solid rgba(0,0,0,.08);
+      border-radius: var(--radius); padding: 1.75rem 1.5rem;
+      border-left: 3px solid transparent;
+      transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.1); border-left-color: var(--color-accent); }
+    .service-icon-wrap {
+      width: 48px; height: 48px; border-radius: 50%; background: rgba(149,193,31,.12);
+      display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;
+    }
+    .service-name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; color: var(--color-dark); }
+    .service-desc { font-size: .9rem; color: var(--color-gray); line-height: 1.55; }
+    .services-cta { text-align: center; }
+    .services-cta-text { font-size: 1.1rem; color: var(--color-gray); margin-bottom: 1.25rem; }
+
+    /* === ABOUT === */
+    .about { padding: 5rem 0; background: var(--color-white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .about-photo { position: relative; border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3; }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .about-photo-overlay { position: absolute; inset: 0; background: rgba(27,67,50,.12); }
+    .about-eyebrow { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; color: var(--color-accent); margin-bottom: .75rem; }
+    .about-heading { font-family: var(--font-display); font-size: clamp(1.7rem, 3.5vw, 2.5rem); color: var(--color-dark); line-height: 1.25; margin-bottom: 1.25rem; }
+    .about-body { font-size: 1rem; color: #374151; line-height: 1.75; margin-bottom: 1rem; }
+    .about-trust-list { margin-top: 1.5rem; display: flex; flex-direction: column; gap: .6rem; }
+    .about-trust-list li { display: flex; align-items: flex-start; gap: .6rem; font-size: .95rem; color: var(--color-dark); }
+    .check-icon { color: var(--color-accent); font-weight: 700; font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+
+    /* === REVIEWS === */
+    .reviews { padding: 5rem 0; background: var(--color-primary-dark); position: relative; overflow: hidden; }
+    .reviews::before {
+      content: ''; position: absolute; inset: 0; opacity: .03;
+      background-image: radial-gradient(rgba(255,255,255,.6) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .reviews .section-heading { color: var(--color-white); }
+    .reviews-heading { color: var(--color-white) !important; }
+    .reviews-subheading { color: rgba(255,255,255,.65) !important; }
+    .reviews-rating-badge {
+      display: flex; align-items: center; gap: 1rem; justify-content: center;
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius); padding: 1.25rem 2rem; max-width: 380px;
+      margin: 0 auto 3rem; width: fit-content;
+    }
+    .reviews-big-number { font-family: var(--font-display); font-size: 3.5rem; font-weight: 700; color: var(--color-white); line-height: 1; }
+    .reviews-badge-right { display: flex; flex-direction: column; gap: .25rem; }
+    .reviews-stars { font-size: 1.3rem; color: #FFD700; letter-spacing: 3px; }
+    .reviews-badge-text { font-size: .85rem; color: rgba(255,255,255,.7); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .review-card {
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius); padding: 1.75rem;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .review-card:hover { background: rgba(255,255,255,.11); transform: translateY(-3px); }
+    .review-stars { font-size: .95rem; color: #FFD700; letter-spacing: 2px; display: block; margin-bottom: .75rem; }
+    .review-text { font-style: italic; color: rgba(255,255,255,.88); font-size: .92rem; line-height: 1.65; margin-bottom: 1rem; }
+    .review-name { font-weight: 700; color: var(--color-accent); font-size: .95rem; margin-bottom: .4rem; }
+    .review-source { display: inline-block; font-size: .75rem; font-weight: 600; padding: .2rem .65rem; border-radius: 100px; }
+    .review-source--fb { background: rgba(24,119,242,.25); color: #90b8ff; }
+    .review-source--g { background: rgba(234,67,53,.22); color: #ffada8; }
+    .reviews-more { text-align: center; margin-top: 2.5rem; }
+    .reviews-more-link { color: var(--color-accent); font-weight: 600; font-size: 1rem; transition: opacity var(--transition); }
+    .reviews-more-link:hover { opacity: .75; }
+
+    /* === SERVICE AREA === */
+    .service-area { padding: 5rem 0; background: var(--color-warm); }
+    .service-area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
+    .service-area-intro { font-size: 1rem; color: var(--color-gray); margin-bottom: 1.25rem; }
+    .area-pills { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.75rem; }
+    .area-pill {
+      background: var(--color-primary); color: var(--color-white); font-size: .85rem;
+      font-weight: 600; padding: .35rem .9rem; border-radius: 100px;
+    }
+    .commercial-note {
+      background: var(--color-primary); color: var(--color-white);
+      border-radius: var(--radius); padding: 1.25rem 1.5rem; font-size: .92rem;
+      line-height: 1.6; margin-bottom: 1.25rem;
+    }
+    .area-contact-note { font-size: .95rem; color: var(--color-gray); margin-bottom: .4rem; }
+    .area-phone { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--color-primary); transition: color var(--transition); }
+    .area-phone:hover { color: var(--color-primary-light); }
+
+    /* === CONTACT === */
+    .contact { padding: 5rem 0; background: var(--color-primary); }
+    .contact-grid { display: grid; grid-template-columns: 2fr 3fr; gap: 4rem; align-items: start; }
+    .contact-heading { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.75rem); color: var(--color-white); margin-bottom: .75rem; }
+    .contact-subheading { color: rgba(255,255,255,.75); font-size: 1rem; line-height: 1.6; margin-bottom: 1.75rem; }
+    .contact-phone-display {
+      display: flex; align-items: center; gap: .65rem;
+      font-family: var(--font-display); font-size: 1.9rem; font-weight: 700;
+      color: var(--color-accent); margin-bottom: .75rem; transition: opacity var(--transition);
+    }
+    .contact-phone-display:hover { opacity: .8; }
+    .contact-email-display {
+      display: flex; align-items: center; gap: .65rem;
+      color: rgba(255,255,255,.8); font-size: .9rem; margin-bottom: 1.5rem; transition: color var(--transition);
+    }
+    .contact-email-display:hover { color: var(--color-accent); }
+    .contact-hours { color: rgba(255,255,255,.75); font-size: .9rem; line-height: 1.8; margin-bottom: 1.5rem; }
+    .hours-title { font-weight: 700; color: var(--color-white); margin-bottom: .25rem; }
+    .contact-badges { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .contact-badge {
+      background: rgba(149,193,31,.15); border: 1px solid rgba(149,193,31,.4);
+      color: var(--color-accent); font-size: .8rem; font-weight: 600;
+      padding: .3rem .8rem; border-radius: 100px;
+    }
+    .contact-form-wrap { background: var(--color-white); border-radius: 16px; padding: 2.5rem; }
+    .quote-form { display: flex; flex-direction: column; gap: 1.25rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .form-row--radio { grid-template-columns: 1fr 1fr; }
+    .form-group { display: flex; flex-direction: column; gap: .4rem; }
+    .form-group label, .form-label-group {
+      font-size: .85rem; font-weight: 600; color: var(--color-dark); letter-spacing: .02em;
+    }
+    .required { color: #dc2626; }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: .7rem 1rem; border: 1.5px solid #D1D5DB; border-radius: 8px;
+      font-family: var(--font-body); font-size: .95rem; color: var(--color-dark);
+      background: var(--color-white); transition: border-color var(--transition), box-shadow var(--transition);
+      appearance: none; -webkit-appearance: none;
+    }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7280' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(27,67,50,.12);
+    }
+    .form-group input.error, .form-group select.error { border-color: #dc2626; }
+    .radio-group { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: .1rem; }
+    .radio-label { display: flex; align-items: center; gap: .4rem; font-size: .9rem; cursor: pointer; color: var(--color-dark); }
+    .radio-label input { width: 16px; height: 16px; accent-color: var(--color-primary); }
+    .btn-submit { width: 100%; height: 52px; font-size: 1.05rem; border-radius: 10px; margin-top: .5rem; }
+    .form-success { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 10px; padding: 1.5rem; text-align: center; }
+    .form-success-msg { color: #065f46; font-weight: 600; font-size: 1rem; }
+
+    /* === FOOTER === */
+    .footer { background: var(--color-primary-dark); color: rgba(255,255,255,.8); font-size: .9rem; }
+    .footer-top { padding: 4rem 0 3rem; }
+    .footer-top-inner { margin-bottom: 2.5rem; }
+    .footer-brand { display: flex; flex-direction: column; gap: .5rem; }
+    .footer-logo { display: flex; align-items: center; gap: .6rem; color: var(--color-white); font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; width: fit-content; }
+    .footer-tagline { color: rgba(255,255,255,.6); font-size: .85rem; max-width: 340px; margin-top: .25rem; }
+    .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5rem; }
+    .footer-col-heading { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--color-white); margin-bottom: 1rem; }
+    .footer-links { display: flex; flex-direction: column; gap: .45rem; }
+    .footer-link { color: rgba(255,255,255,.65); transition: color var(--transition); }
+    .footer-link:hover { color: var(--color-accent); }
+    .footer-contact-list { display: flex; flex-direction: column; gap: .75rem; }
+    .footer-contact-list li { display: flex; align-items: flex-start; gap: .6rem; }
+    .footer-contact-list a { color: rgba(255,255,255,.65); transition: color var(--transition); }
+    .footer-contact-list a:hover { color: var(--color-accent); }
+    .footer-hours { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1rem; }
+    .footer-hours li { display: flex; justify-content: space-between; gap: 1rem; }
+    .footer-free-est { color: var(--color-accent); font-weight: 600; font-size: .85rem; margin-bottom: 1rem; }
+    .footer-payment-title { font-weight: 600; color: rgba(255,255,255,.7); margin-bottom: .25rem; }
+    .footer-bottom { background: var(--color-primary); padding: 1.25rem 0; font-size: .82rem; }
+    .footer-bottom-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; color: rgba(255,255,255,.55); }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-phone { display: none; }
+      .nav-hamburger { display: flex; }
+      .mobile-nav-overlay { display: flex; }
+      .trust-bar-inner { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+      .trust-divider { display: none; }
+      .services-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .service-area-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-row--radio { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+      .contact-form-wrap { padding: 1.5rem; }
+      .hero-ctas { flex-direction: column; }
+      .hero-ctas .btn { width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+  <!-- Google Analytics placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LandscapeCompany",
+    "name": "ALL Lawn Care Service & Landscaping LLC",
+    "image": "https://fwlawns.com/og-image.jpg",
+    "url": "https://fwlawns.com",
+    "telephone": "+12604945700",
+    "email": "georgebourounis30@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10309 Brandywine Dr",
+      "addressLocality": "Fort Wayne",
+      "addressRegion": "IN",
+      "postalCode": "46825",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.177282,
+      "longitude": -85.122698
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "07:30",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "204"
+    },
+    "description": "Family-owned lawn care and landscaping company serving Fort Wayne, Indiana and surrounding areas since 2009. Services include mowing, landscaping, mulch, tree trimming, sod, fertilization, snow removal, and commercial maintenance.",
+    "areaServed": [
+      "Fort Wayne, IN", "New Haven, IN", "Leo, IN", "Huntertown, IN", "Aboite, IN", "Waynedale, IN", "Auburn, IN"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="ALL Lawn Care Service home">
+      <svg class="nav-logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <path d="M14 3C14 3 6 8 6 16a8 8 0 0016 0c0-8-8-13-8-13z" fill="#95C11F"/>
+        <path d="M14 10v14" stroke="#1B4332" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="nav-logo-text">
+        <span class="nav-logo-main">ALL Lawn Care</span>
+        <span class="nav-logo-sub">Service &amp; Landscaping</span>
+      </span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#service-area" class="nav-link">Service Area</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+12604945700" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 2h3l1.5 3.5-1.75 1.05a8.5 8.5 0 004.7 4.7L11.5 9.5 15 11v3a1 1 0 01-1 1C6.268 15 1 9.732 1 3a1 1 0 011-1z" fill="currentColor"/>
+        </svg>
+        (260) 494-5700
+      </a>
+      <a href="#contact" class="btn btn-accent btn-pill">Free Quote</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY NAV -->
+<div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+  <ul class="mobile-nav-links" role="list">
+    <li><a href="#services" class="mobile-nav-link">Services</a></li>
+    <li><a href="#about" class="mobile-nav-link">About</a></li>
+    <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+    <li><a href="#service-area" class="mobile-nav-link">Service Area</a></li>
+    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+  </ul>
+  <div class="mobile-nav-footer">
+    <a href="tel:+12604945700" class="mobile-nav-phone">(260) 494-5700</a>
+    <a href="#contact" class="btn btn-accent btn-pill mobile-nav-cta">Free Quote</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-badge fade-up">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M7 1C7 1 3 4 3 8a4 4 0 008 0c0-4-4-7-4-7z" fill="#95C11F"/>
+        <path d="M7 5v7" stroke="#1B4332" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      Fort Wayne's Trusted Lawn Crew
+    </div>
+    <h1 class="hero-headline fade-up">Your Lawn Deserves<br>the Best.</h1>
+    <p class="hero-subheadline fade-up">Family-owned. 15+ years serving Fort Wayne. From a clean weekly mow to a full landscape transformation — we handle it all.</p>
+    <div class="hero-stars fade-up" aria-label="4.6 stars, over 200 Google Reviews">
+      <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="hero-stars-text">4.6 stars &middot; 200+ Google Reviews</span>
+    </div>
+    <div class="hero-ctas fade-up">
+      <a href="#contact" class="btn btn-accent btn-large">Get a Free Quote &rarr;</a>
+      <a href="tel:+12604945700" class="btn btn-outline-white btn-large">Call (260) 494-5700</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M6 9l6 6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar" aria-label="Business highlights">
+  <div class="trust-bar-inner">
+    <div class="trust-item fade-up">
+      <svg class="trust-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 4l2.4 7.2H26l-6.2 4.5 2.4 7.3L16 18.6l-6.2 4.4 2.4-7.3L6 11.2h7.6L16 4z" fill="#95C11F"/>
+      </svg>
+      <span class="trust-stat" data-target="15">0</span><span class="trust-stat-suffix">+ Years</span>
+      <span class="trust-label">Serving Fort Wayne</span>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-item fade-up">
+      <svg class="trust-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 6l2.9 8.6H28l-7.4 5.4 2.9 8.7L16 23.4l-7.5 5.3 2.9-8.7L4 14.6h9.1L16 6z" fill="#95C11F"/>
+      </svg>
+      <span class="trust-stat">4.6</span><span class="trust-stat-suffix"> Stars</span>
+      <span class="trust-label">200+ Google Reviews</span>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-item fade-up">
+      <svg class="trust-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="4" y="14" width="24" height="14" rx="2" stroke="#95C11F" stroke-width="2"/>
+        <path d="M10 14V10a6 6 0 1112 0v4" stroke="#95C11F" stroke-width="2"/>
+        <path d="M8 8h2v6H8zM22 8h2v6h-2z" fill="#95C11F"/>
+        <rect x="12" y="4" width="8" height="10" rx="2" fill="#95C11F" fill-opacity="0.3"/>
+        <path d="M4 20h24" stroke="#95C11F" stroke-width="1" opacity="0.4"/>
+      </svg>
+      <span class="trust-stat-text">Residential &amp; Commercial</span>
+      <span class="trust-label">All Property Types</span>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-item fade-up">
+      <svg class="trust-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="12" stroke="#95C11F" stroke-width="2"/>
+        <path d="M10 16l4 4 8-8" stroke="#95C11F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="trust-stat-text">Free Estimates</span>
+      <span class="trust-label">Always, No Obligation</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2 class="section-heading">Everything Your Property Needs</h2>
+      <p class="section-subheading">From routine maintenance to custom landscape transformations — one crew handles it all.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 3l2 6H4l2-6zM18 3l2 6h-4l2-6z" fill="#95C11F"/>
+            <rect x="3" y="9" width="18" height="3" rx="1.5" fill="#95C11F"/>
+            <path d="M5 12v9M19 12v9" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 18h14" stroke="#95C11F" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Lawn Mowing &amp; Edging</h3>
+        <p class="service-desc">Weekly and bi-weekly mowing routes for residential and commercial properties, with clean edging every visit.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3C9 6 5 10 5 14a7 7 0 0014 0c0-4-4-8-7-11z" fill="#95C11F" fill-opacity="0.3" stroke="#95C11F" stroke-width="1.5"/>
+            <path d="M12 8v10M9 14l3-2 3 2" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Landscaping &amp; Custom Design</h3>
+        <p class="service-desc">Full-service landscape design and installation — beds, borders, trees, and custom outdoor layouts.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 20l-3-9h14l-3 9H8z" fill="#95C11F" fill-opacity="0.3" stroke="#95C11F" stroke-width="1.5"/>
+            <path d="M12 4v7M9 7l3-3 3 3" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Mulch, River Rock &amp; Topsoil</h3>
+        <p class="service-desc">Premium mulch installation, river rock features, and topsoil delivery to refresh any outdoor space.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3C10 5 7 8 7 12a5 5 0 0010 0c0-4-3-7-5-9z" fill="#95C11F" fill-opacity="0.3" stroke="#95C11F" stroke-width="1.5"/>
+            <path d="M12 12v9" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M9 15l3 2 3-2" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Tree Trimming &amp; Pruning</h3>
+        <p class="service-desc">Professional trimming and shaping to keep your trees healthy, safe, and looking their best year-round.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <ellipse cx="12" cy="18" rx="8" ry="3" fill="#95C11F" fill-opacity="0.3" stroke="#95C11F" stroke-width="1.5"/>
+            <path d="M8 18C8 14 10 10 12 7c2 3 4 7 4 11" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="12" cy="6" r="2" fill="#95C11F"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Sod &amp; Seeding</h3>
+        <p class="service-desc">New sod installation and overseeding for bare patches, giving you thick, lush turf fast.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12c0-4 3-8 7-9 4 1 7 5 7 9a7 7 0 01-14 0z" fill="#95C11F" fill-opacity="0.2"/>
+            <path d="M12 21V12M9 15l3-3 3 3" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="19" cy="6" r="3" fill="#95C11F"/>
+            <path d="M17 6h4M19 4v4" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Fertilization &amp; Weed Control</h3>
+        <p class="service-desc">Customized treatment programs that keep your lawn green, healthy, and weed-free through every season.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5 17C7 14 9 12 12 11c3 1 5 3 7 6" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3 20h18" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M8 11C8 8 10 5 12 3c2 2 4 5 4 8" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Spring &amp; Fall Cleanup</h3>
+        <p class="service-desc">Complete seasonal cleanups — raking, hauling, bed prep — so your property looks sharp every season.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="5" r="1.5" fill="#95C11F"/>
+            <circle cx="6" cy="9" r="1.5" fill="#95C11F"/>
+            <circle cx="18" cy="9" r="1.5" fill="#95C11F"/>
+            <circle cx="4" cy="15" r="1.5" fill="#95C11F"/>
+            <circle cx="12" cy="13" r="1.5" fill="#95C11F"/>
+            <circle cx="20" cy="15" r="1.5" fill="#95C11F"/>
+            <circle cx="8" cy="19" r="1.5" fill="#95C11F"/>
+            <circle cx="16" cy="19" r="1.5" fill="#95C11F"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Snow Removal</h3>
+        <p class="service-desc">Reliable winter service for driveways, walkways, and parking lots. We're ready when the snow falls.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="10" width="18" height="11" rx="1" stroke="#95C11F" stroke-width="1.5"/>
+            <path d="M7 10V7a5 5 0 0110 0v3" stroke="#95C11F" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="9" y="14" width="6" height="4" rx="1" fill="#95C11F"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Commercial Properties</h3>
+        <p class="service-desc">Ongoing maintenance contracts for shopping centers, office parks, and multi-family properties.</p>
+      </div>
+
+    </div>
+    <div class="services-cta fade-up">
+      <p class="services-cta-text">Not sure what you need? We'll figure it out together.</p>
+      <a href="#contact" class="btn btn-primary">Schedule a Free Walkthrough &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo fade-up">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80" alt="ALL Lawn Care crew working on a beautiful Fort Wayne property" loading="lazy">
+        <div class="about-photo-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="about-content fade-up">
+        <p class="about-eyebrow">About Us</p>
+        <h2 class="about-heading">The Bourounis Family —<br>Fort Wayne's Own</h2>
+        <p class="about-body">ALL Lawn Care Service started with a simple idea: every property deserves to look its best, and every customer deserves to be treated like a neighbor — because in Fort Wayne, you probably are.</p>
+        <p class="about-body">George Bourounis and his crew have been showing up across Fort Wayne for over 15 years. We handle everything from weekly mowing routes to complete landscape installations, and we take the same pride in a shopping center parking lot that we do in a front yard on Brandywine Drive.</p>
+        <p class="about-body">With 200+ Google reviews, an A+ BBB rating, and Nextdoor Neighborhood Favorite recognition in two Fort Wayne neighborhoods — our reputation speaks for itself.</p>
+        <ul class="about-trust-list" aria-label="Business credentials">
+          <li><span class="check-icon" aria-hidden="true">&#10003;</span> Family-owned and operated since 2009</li>
+          <li><span class="check-icon" aria-hidden="true">&#10003;</span> Residential &amp; commercial clients welcome</li>
+          <li><span class="check-icon" aria-hidden="true">&#10003;</span> A+ Better Business Bureau rating</li>
+          <li><span class="check-icon" aria-hidden="true">&#10003;</span> Nextdoor Neighborhood Favorite — 2 neighborhoods</li>
+          <li><span class="check-icon" aria-hidden="true">&#10003;</span> Free estimates — always, no commitment</li>
+          <li><span class="check-icon" aria-hidden="true">&#10003;</span> We respond fast — often same day</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2 class="section-heading reviews-heading">What Fort Wayne Is Saying</h2>
+      <p class="section-subheading reviews-subheading">Over 200 verified reviews. Here's what our customers say.</p>
+    </div>
+    <div class="reviews-rating-badge fade-up" aria-label="4.6 stars based on over 200 Google reviews">
+      <span class="reviews-big-number">4.6</span>
+      <div class="reviews-badge-right">
+        <span class="stars reviews-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="reviews-badge-text">Based on 200+ Google Reviews</span>
+      </div>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card fade-up">
+        <span class="stars review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="review-text">"George and his crew are awesome! They take care of our shopping center in Fort Wayne and do a fantastic job. George is very easy to work with and is very knowledgeable about lawn care. If you want a great looking lawn, look no further than All Lawn Care Service."</p>
+        <p class="review-name">Betsy Drake</p>
+        <span class="review-source review-source--fb">Facebook</span>
+      </div>
+
+      <div class="review-card fade-up">
+        <span class="stars review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="review-text">"I have nearly a full acre property. They weeded, raked, treated, seeded and mulched and hauled away everything in two days. Friendly and professional."</p>
+        <p class="review-name">Anet Baaske</p>
+        <span class="review-source review-source--fb">Facebook</span>
+      </div>
+
+      <div class="review-card fade-up">
+        <span class="stars review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="review-text">"First cut was done Wednesday night. They did a great job. Very professional. Would highly recommend them."</p>
+        <p class="review-name">Brian Homier</p>
+        <span class="review-source review-source--fb">Facebook</span>
+      </div>
+
+      <div class="review-card fade-up">
+        <span class="stars review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="review-text">"George does excellent work at a fair price. Highly recommend him."</p>
+        <p class="review-name">Dan Hudson</p>
+        <span class="review-source review-source--fb">Facebook</span>
+      </div>
+
+      <div class="review-card fade-up">
+        <span class="stars review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="review-text">"Exceptional service. Very knowledgeable. Showed up within hours to help. My dog was breaking out in hives due to the grass. The owner treated it quickly and even helped me spray some poison ivy."</p>
+        <p class="review-name">Jamie Love</p>
+        <span class="review-source review-source--g">Google</span>
+      </div>
+
+      <div class="review-card fade-up">
+        <span class="stars review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="review-text">"George does great work for a fair price. Going to be my go to lawn guy from now on."</p>
+        <p class="review-name">Austin Fain</p>
+        <span class="review-source review-source--fb">Facebook</span>
+      </div>
+
+    </div>
+    <div class="reviews-more fade-up">
+      <a href="https://www.google.com/maps/search/ALL+Lawn+Care+Service+Fort+Wayne+IN" target="_blank" rel="noopener noreferrer" class="reviews-more-link">Read more on Google &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="service-area" id="service-area">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2 class="section-heading">Proudly Serving Northeast Indiana</h2>
+    </div>
+    <div class="service-area-grid">
+      <div class="service-area-map fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5!2d-85.122698!3d41.177282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s10309+Brandywine+Dr%2C+Fort+Wayne%2C+IN+46825!5e0!3m2!1sen!2sus!4v1"
+          width="100%"
+          height="380"
+          style="border:0;border-radius:12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="ALL Lawn Care Service location map — 10309 Brandywine Dr, Fort Wayne, IN">
+        </iframe>
+      </div>
+      <div class="service-area-content fade-up">
+        <p class="service-area-intro">We proudly serve Fort Wayne and the surrounding Northeast Indiana communities:</p>
+        <div class="area-pills" aria-label="Service areas">
+          <span class="area-pill">Fort Wayne</span>
+          <span class="area-pill">New Haven</span>
+          <span class="area-pill">Leo</span>
+          <span class="area-pill">Huntertown</span>
+          <span class="area-pill">Aboite</span>
+          <span class="area-pill">Waynedale</span>
+          <span class="area-pill">Southwest Allen County</span>
+          <span class="area-pill">Auburn</span>
+          <span class="area-pill">and surrounding areas</span>
+        </div>
+        <div class="commercial-note">
+          <p>We also serve commercial properties across Allen County — shopping centers, office parks, apartment complexes, and multi-family properties. Ask about seasonal maintenance contracts.</p>
+        </div>
+        <p class="area-contact-note">Not in the list? Give us a call — we likely cover your area.</p>
+        <a href="tel:+12604945700" class="area-phone">(260) 494-5700</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / QUOTE FORM -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <h2 class="contact-heading">Get Your Free Quote</h2>
+        <p class="contact-subheading">Tell us about your property and we'll get back to you fast — usually the same day.</p>
+        <a href="tel:+12604945700" class="contact-phone-display">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M4 3h4l2 5-2.5 1.5a11 11 0 005 5L14 12l5 2v4a2 2 0 01-2 2C7.4 20 2 14.6 2 8a2 2 0 012-2z" fill="currentColor"/>
+          </svg>
+          (260) 494-5700
+        </a>
+        <a href="mailto:georgebourounis30@gmail.com" class="contact-email-display">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <rect x="2" y="5" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          georgebourounis30@gmail.com
+        </a>
+        <div class="contact-hours">
+          <p class="hours-title">Business Hours</p>
+          <p>Mon – Sat: 7:30 AM – 8:00 PM</p>
+          <p>Sunday: 9:00 AM – 5:00 PM</p>
+        </div>
+        <div class="contact-badges">
+          <span class="contact-badge">Free Estimate</span>
+          <span class="contact-badge">Fast Response</span>
+          <span class="contact-badge">No Commitment</span>
+        </div>
+      </div>
+      <div class="contact-form-wrap fade-up">
+        <form class="quote-form" id="quote-form" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST" novalidate>
+          <!-- Replace REPLACE_WITH_FORMSPREE_ID with your Formspree endpoint -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="full-name" name="full_name" placeholder="Jane Smith" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Best Number to Reach You <span class="required" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(260) 555-1234" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="address">Where Do You Need Service? <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="address" name="address" placeholder="123 Main St, Fort Wayne" required autocomplete="street-address">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed <span class="required" aria-hidden="true">*</span></label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="Lawn Mowing &amp; Edging">Lawn Mowing &amp; Edging</option>
+              <option value="Landscaping &amp; Design">Landscaping &amp; Design</option>
+              <option value="Mulch / River Rock / Topsoil">Mulch / River Rock / Topsoil</option>
+              <option value="Tree Trimming &amp; Pruning">Tree Trimming &amp; Pruning</option>
+              <option value="Sod &amp; Seeding">Sod &amp; Seeding</option>
+              <option value="Fertilization &amp; Weed Control">Fertilization &amp; Weed Control</option>
+              <option value="Spring or Fall Cleanup">Spring or Fall Cleanup</option>
+              <option value="Snow Removal">Snow Removal</option>
+              <option value="Commercial Property Contract">Commercial Property Contract</option>
+              <option value="Not sure — I need a consultation">Not sure — I need a consultation</option>
+            </select>
+          </div>
+          <div class="form-row form-row--radio">
+            <div class="form-group">
+              <label class="form-label-group">Property Type <span class="required" aria-hidden="true">*</span></label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="property_type" value="Residential" required> Residential</label>
+                <label class="radio-label"><input type="radio" name="property_type" value="Commercial"> Commercial</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label-group">Preferred Contact Method</label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="contact_method" value="Phone Call"> Phone Call</label>
+                <label class="radio-label"><input type="radio" name="contact_method" value="Text Message"> Text Message</label>
+                <label class="radio-label"><input type="radio" name="contact_method" value="Email"> Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your property size, specific needs, or any questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent btn-submit">Send My Request &rarr;</button>
+          <div class="form-success" id="form-success" aria-live="polite" hidden>
+            <p class="form-success-msg"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-top-inner">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo" aria-label="ALL Lawn Care Service home">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <path d="M14 3C14 3 6 8 6 16a8 8 0 0016 0c0-8-8-13-8-13z" fill="#95C11F"/>
+              <path d="M14 10v14" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>ALL Lawn Care</span>
+          </a>
+          <p class="footer-tagline">Fort Wayne's full-service lawn &amp; landscape crew. Family-owned since 2009.</p>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Company</h3>
+          <p>ALL Lawn Care Service<br>&amp; Landscaping LLC<br>Fort Wayne, Indiana</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#services" class="footer-link">Lawn Mowing</a></li>
+            <li><a href="#services" class="footer-link">Landscaping</a></li>
+            <li><a href="#services" class="footer-link">Mulch &amp; River Rock</a></li>
+            <li><a href="#services" class="footer-link">Tree Trimming</a></li>
+            <li><a href="#services" class="footer-link">Sod &amp; Seeding</a></li>
+            <li><a href="#services" class="footer-link">Fertilization</a></li>
+            <li><a href="#services" class="footer-link">Snow Removal</a></li>
+            <li><a href="#services" class="footer-link">Commercial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Contact</h3>
+          <ul class="footer-contact-list" role="list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 2h3l1.5 3.5-1.75 1.05a8.5 8.5 0 004.7 4.7L11.5 9.5 15 11v3a1 1 0 01-1 1C6.268 15 1 9.732 1 3a1 1 0 011-1z" fill="currentColor"/></svg>
+              <a href="tel:+12604945700">(260) 494-5700</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="4" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M1 5.5l7 4.5 7-4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              <a href="mailto:georgebourounis30@gmail.com">georgebourounis30@gmail.com</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2a5 5 0 015 5c0 3.5-5 9-5 9S3 10.5 3 7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="7" r="1.5" fill="currentColor"/></svg>
+              <span>10309 Brandywine Dr<br>Fort Wayne, IN 46825</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2C4.686 2 2 4.686 2 8s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm3 6.5H8.5V11h-1V8.5H5v-1h2.5V5h1v2.5H11v1z" fill="currentColor"/></svg>
+              <a href="https://facebook.com/alllawncareservice" target="_blank" rel="noopener noreferrer">facebook.com/alllawncareservice</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Hours</h3>
+          <ul class="footer-hours" role="list">
+            <li><span>Mon – Fri:</span><span>7:30 AM – 8:00 PM</span></li>
+            <li><span>Saturday:</span><span>7:30 AM – 8:00 PM</span></li>
+            <li><span>Sunday:</span><span>9:00 AM – 5:00 PM</span></li>
+          </ul>
+          <p class="footer-free-est">Free estimates available</p>
+          <div class="footer-payment">
+            <p class="footer-payment-title">Payment Accepted</p>
+            <p>Visa &middot; Mastercard &middot; Personal Checks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; 2025 ALL Lawn Care Service &amp; Landscaping LLC. All rights reserved.</p>
+      <p>Website by Fort Wayne Web Studio</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 80);
+  }, { passive: true });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => {
+          l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id);
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+
+  // Mobile nav
+  const hamburger = document.getElementById('nav-hamburger');
+  const overlay = document.getElementById('mobile-nav-overlay');
+  const closeBtn = document.getElementById('mobile-nav-close');
+
+  function openMobileNav() {
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    overlay.classList.add('open');
+    overlay.removeAttribute('aria-hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileNav() {
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  hamburger.addEventListener('click', openMobileNav);
+  closeBtn.addEventListener('click', closeMobileNav);
+  overlay.querySelectorAll('.mobile-nav-link, .mobile-nav-cta').forEach(l => l.addEventListener('click', closeMobileNav));
+
+  // Fade-up on scroll
+  const fadeEls = document.querySelectorAll('.fade-up');
+  const fadeObs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        const siblings = [...e.target.parentElement.querySelectorAll('.fade-up')];
+        const idx = siblings.indexOf(e.target);
+        setTimeout(() => e.target.classList.add('visible'), idx * 80);
+        fadeObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  fadeEls.forEach(el => fadeObs.observe(el));
+
+  // Counter animation
+  function animateCounter(el, target, isDecimal) {
+    const dur = 1600;
+    const start = performance.now();
+    function step(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      const val = isDecimal ? (target * ease).toFixed(1) : Math.round(target * ease);
+      el.textContent = val;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const target = parseFloat(e.target.dataset.target);
+        animateCounter(e.target, target, String(target).includes('.'));
+        counterObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
+
+  // Quote form handling
+  const form = document.getElementById('quote-form');
+  const successDiv = document.getElementById('form-success');
+  const successMsg = successDiv.querySelector('.form-success-msg');
+
+  function validateForm() {
+    let valid = true;
+    form.querySelectorAll('[required]').forEach(field => {
+      if (field.type === 'radio') {
+        const group = form.querySelectorAll(`[name="${field.name}"]`);
+        const checked = [...group].some(r => r.checked);
+        const wrap = field.closest('.radio-group');
+        wrap && (wrap.style.outline = checked ? '' : '2px solid #dc2626');
+        if (!checked) valid = false;
+      } else {
+        const empty = !field.value.trim();
+        field.classList.toggle('error', empty);
+        if (empty) valid = false;
+      }
+    });
+    const emailField = form.querySelector('#email');
+    if (emailField && emailField.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
+      emailField.classList.add('error'); valid = false;
+    }
+    return valid;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+    const data = new FormData(form);
+    const name = data.get('full_name') || 'there';
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      if (res.ok) {
+        form.hidden = true;
+        successMsg.textContent = `Thanks, ${name}! We'll be in touch shortly. Or call us directly at (260) 494-5700.`;
+        successDiv.hidden = false;
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      successMsg.textContent = 'Oops — something went wrong. Please call us at (260) 494-5700.';
+      successDiv.hidden = false;
+    }
+  });
+
+  // Clear error state on input
+  form.querySelectorAll('input, select, textarea').forEach(el => {
+    el.addEventListener('input', () => el.classList.remove('error'));
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+</script>
+
+</body>
+</html>
